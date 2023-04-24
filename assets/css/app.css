@@ -1,0 +1,152 @@
+body{
+    background-color: #100f0f;
+    padding:0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexBox {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%
+}
+
+.mathCard {
+    background: white;
+    border-radius: 0.25rem;
+    padding: 4rem
+}
+
+.questionText {
+    padding-bottom: 2rem;
+    font-size: 50px;
+    font-family: Arial, serif;
+    text-align: center;
+    color: #000000;
+}
+
+input[type=text]{
+    width: 24%;
+    height: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 39%;
+    border-color: #666faf;
+}
+
+.correctAnswer {
+    color: #39ce62;
+    font-size: 1.5rem
+}
+
+
+div.timer {
+    border:1px #666666 solid;
+    width:190px;
+    height:50px;
+    line-height:50px;
+    font-size:36px;
+    font-family:"Courier New", Courier,
+    monospace;
+    text-align:center;
+    margin:5px;
+}
+
+
+
+input[type=text]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+label[type=Answer]{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+    font-family: Krungthep;
+}
+.container h3{
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    font-family: Arial, serif;
+}
+
+
+.container h2 {
+    text-align: left;
+    font-size: 30px;
+    font-family: "Noto Sans Tifinagh";
+    color: #000000;
+}
+
+.btn{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 20px;
+    color: #050904;
+    margin-top: 40px;
+    transition: all .5s ease;
+    border: 3px #2068b2;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: #fffcfe;
+    background-color: #0c9fcc;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container{
+    width: 900px;
+    height: 650px;
+    max-width: 80%;
+    background-color: #8de2e4;
+    box-shadow: 0 0 10px 3px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.tooltip {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: rgba(35, 53, 119, 0.55);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
+}

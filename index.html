@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <title>Speed calculation</title>
+</head>
+
+<body onload="randomCreator()">
+
+
+<div class="container-fluid">
+    <div class="flexBox">
+        <div class="container">
+
+
+
+            <p id="demo"></p>
+
+            <script>
+                function myFunction() {var txt;if (confirm("END GAME")) {txt = "";} else {txt = "You pressed Cancel!";}
+                    document.getElementById("demo").innerHTML = txt;
+                }
+            </script>
+
+
+
+
+
+
+            <h2 id="timer-text">0</h2>
+            <h1>Speed Calculation</h1>
+
+            <div class="tooltip">How to play
+                <span class="tooltiptext">When you hit the start button, a timer will start counting up. Your goal is to correctly answer questions as fast as possible. There will be 10 questions in total. Good luck!</span>
+            </div>
+
+            <div id="#Question" style="display: none">
+                <h3 class="questionText"></h3>
+            </div>
+
+            <form id="mathForm">
+                <div class="form-group";>
+                    <input type="text" class="form-control" id="answerInput" placeholder="Type your answer here">
+                </div>
+                <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+            </form>
+            <div class="start-button" style="text-align: center">
+                <input type="button" id="start-button" value="Start" onclick="showDiv()" class="btn btn-outline-primary w-100"></inputbutton>
+
+                <div class="exit-button" onclick="myFunction()" style="text-align: center">
+                    <input type="exit" id="exit-button" value="Exit" onclick="endGame()" class="btn btn-outline-primary w-100"></inputbutton>
+                </div>
+
+                <script>
+                    function endGame() {
+                        randomCreator(false);
+                    }
+                </script>
+
+                <script>
+                    function showDiv() {
+                        document.getElementById('#Question').style.display = "block";
+                    }
+                </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript -->
+<script src="./assets/js/app.js"></script>
+
+</div>
+
+</body>
+
+
